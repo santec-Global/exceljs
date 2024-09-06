@@ -1,8 +1,8 @@
 {
   "name": "exceljs",
-  "version": "4.4.1",
+  "version": "4.4.2",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
-  "private": false,
+  "private": true,
   "license": "MIT",
   "author": {
     "name": "Guyon Roche",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/exceljs/exceljs.git"
+    "url": "https://github.com/santec-Global/exceljs.git"
   },
   "engines": {
     "node": ">=8.3.0"
@@ -57,6 +57,7 @@
     "install-build": "npm install && grunt build",
     "preversion": "npm run clean && npm run build && npm run test:version",
     "postversion": "git push --no-verify && git push --tags --no-verify"
+    "prepare": "npm run clean-build"
   },
   "husky": {
     "hooks": {
